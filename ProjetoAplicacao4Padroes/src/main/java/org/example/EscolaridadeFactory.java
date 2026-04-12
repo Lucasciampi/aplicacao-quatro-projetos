@@ -21,7 +21,7 @@ public class EscolaridadeFactory {
 
         try {
             classe = Class.forName("org.example." + escolaridade);
-            objeto = classe.getDeclaredConstructor().newInstance();
+            objeto = classe.newInstance();
         } catch (Exception ex) {
             throw new IllegalArgumentException("Tipo de Escolaridade não encontrada.");
         }
