@@ -10,7 +10,6 @@ class CargoTest {
     void deveRetornarProfessorComMestrado() {
         FabricaProfessor fabrica = FabricaProfessor.getInstance();
         Professor professor = fabrica.criarCargo(100f);
-
         professor.setNumAulas(10);
         assertEquals(1200f, professor.calcularSalario());
     }
